@@ -1,0 +1,25 @@
+{
+  "name": "WheelOfFortune",
+  "version": "1.0.0",
+  "description": "a pet collection game based on ehtereum",
+  "main": "server.js",
+  "config": {
+    "port": "8080"
+  },
+  "dependencies": {
+    "connect": "^3.6.6",
+    "ethereumjs-tx": "^1.3.3",
+    "express": "^4.16.2",
+    "html": "^1.0.0",
+    "jquery": "~3.2.1",
+    "truffle": "^3.4.8",
+    "truffle-contract": "^2.0.5",
+    "url": "^0.11.0",
+    "web3": "^0.20.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "forrestlin",
+  "license": "ISC"
+}

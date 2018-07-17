@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Demo</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./js/truffle-contract.min.js"></script>
+    <style>
+        .wrapper {
+            position: fixed;
+            left: 30%;
+            top: 7%;
+        }
+
+        .lastResult {
+            position: fixed;
+            left: 70%;
+            top: 40%;
+        }
+
+        body {
+            margin: 0;
+            font: 12px Arial;
+            background-color: #fff
+        }
+
+        .canvas_container {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            left: 25%;
+            top: 25%;
+        }
+
+        #run {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            /* cursor: pointer; */
+            left: 190px;
+            top: 190px;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+    <div class="canvas_container">
+        <div id="run"></div>
+        <canvas id="luckytable" width="500" height="500"> </canvas>
+    </div>
+
+    <div class="wrapper typo" id="wrapper">
+
+        <h2>
+            <span class="timespan"></span>
+        </h2>
+        <h1>奖金池（wei）：
+            <font color="red" id="currentTotal">0</font>
+        </h1>
+        <h1>当前每注大小（wei）:
+            <font color="red" id="currentBetUnit">1000</font>
+        </h1>
+        <div id="show_person_num"></div>
+    </div>
+    <div class="lastResult">
+        <h2>~~~上轮中奖情况~~~</font>
+        </h2>
+        <h3>瓜分金额：
+            <font color="#ff8c3f" id="lastTotal">0</font>
+        </h3>
+        <h3>中奖人数：
+            <font color="#ff8c3f" id="lastNumber">0</font>
+        </h3>
+        <h3>中奖扇区：
+            <font color="#ff8c3f" id="lastBlock">0</font>
+        </h3>
+    </div>
+
+    <script src="js/LuckyTable.js"></script>
+
+</body>
+
+</html>
